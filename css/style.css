@@ -93,11 +93,11 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .brand-intro     { grid-column: 13 / 69; grid-row: 27 / 39; text-align: center; font-size: 35px; line-height: 1.5; }
 .brand-intro2    { grid-column: 13 / 69; grid-row: 43 / 48; text-align: center; font-size: 35px; line-height: 1.5; }
 .vision-mark     { grid-column: 5 / 16;  grid-row: 57 / 61; }
-.vision-caption  { grid-column: 5 / 37;  grid-row: 62 / 63; font-size: 21px; line-height: 1.5; color: #fff; }
-.vision-heading  { grid-column: 5 / 23;  grid-row: 66 / 69; font-size: 44px; font-weight: 800; line-height: 1.15; color: #fff; }
+.vision-caption  { grid-column: 5 / 37;  grid-row: 62 / 63; font-size: 21px; line-height: 1.2; color: #fff; }
+.vision-heading  { grid-column: 5 / 23;  grid-row: 66 / 69; margin-top: -25px; font-size: 44px; font-weight: 800; line-height: 1.15; color: #fff; }
 .vision-rule     { grid-column: 23 / 52; grid-row: 65 / 68; height: 1px; align-self: center; background: rgba(248, 239, 231, 0.6); }
 .vision-wordmark { grid-column: 54 / 74; grid-row: 63 / 70; }
-.vision-statement{ grid-column: 17 / 63; grid-row: 77 / 87; justify-content: center; text-align: center; font-size: 40px; font-weight: 800; line-height: 1.4; color: #fff; }
+.vision-statement{ grid-column: 17 / 63; grid-row: 77 / 87; margin-top: -26px; text-align: center; font-size: 40px; font-weight: 800; line-height: 1.4; color: #fff; }
 .vision-desc     { grid-column: 17 / 63; grid-row: 91 / 95; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; color: #fff; }
 .vision-illust   { grid-column: 1 / 75;  grid-row: 102 / 159; z-index: 6; object-fit: contain; }
 
@@ -136,7 +136,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .f4-heading { grid-column: 9 / 36;  grid-row: 89 / 94;  font-size: 32px; font-weight: 700; line-height: 1.2; color: #fff; }
 .f4-desc    { grid-column: 9 / 36;  grid-row: 96 / 104; font-size: 21px; line-height: 1.5; }
 
-.invite-text { grid-column: 2 / 74;  grid-row: 116 / 120; justify-content: center; text-align: center; font-size: 32px; font-weight: 400; line-height: 1.3; }
+.invite-text { grid-column: 2 / 74;  grid-row: 116 / 120; margin-top: -7px; text-align: center; font-size: 32px; font-weight: 400; line-height: 1.3; }
 .invite-text strong { font-weight: 700; }
 .invite-btn  { grid-column: 31 / 47; grid-row: 122 / 125; }
 
@@ -148,7 +148,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .sec-kim { min-height: calc(194 * var(--cell)); }
 .kim-title    { grid-column: 3 / 74;  grid-row: 4 / 11;    font-size: 80px; font-weight: 800; line-height: 1.15; }
 .kim-name     { grid-column: 19 / 74; grid-row: 4 / 11;    text-align: right; font-size: 60px; font-weight: 800; line-height: 1.25; }
-.kim-meta     { grid-column: 3 / 32;  grid-row: 10 / 18;   font-size: 35px; font-weight: 800; line-height: 1.3; }
+.kim-meta     { grid-column: 3 / 32;  grid-row: 10 / 18;   margin-top: -22px; font-size: 35px; font-weight: 800; line-height: 1.3; }
 .kim-portrait { grid-column: 42 / 74; grid-row: 12 / 54; }
 .kim-quote    { grid-column: 2 / 41;  grid-row: 17 / 30;   font-size: 75px; font-weight: 400; line-height: 1.25; color: #fff; }
 .kim-story1   { grid-column: 2 / 39;  grid-row: 35 / 48;   font-size: 28px; line-height: 1.5; color: #fff; }
