@@ -221,8 +221,8 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   padding: 36px 48px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
 }
-.apply-form__title { text-align: center; font-size: 20px; font-weight: 800; }
-.apply-form__sub   { margin-top: 8px; text-align: center; font-size: 13px; color: var(--taupe); }
+.apply-form__title { text-align: center; font-size: 26px; font-weight: 800; }
+.apply-form__sub   { margin-top: 10px; text-align: center; font-size: 15px; color: var(--taupe); }
 .apply-form__field { display: block; margin-top: 14px; }
 .apply-form__label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
 .apply-form__label em { color: var(--accent); font-style: normal; }
@@ -261,8 +261,8 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .palace-img { grid-column: 1 / 75; grid-row: 12 / 50; }
 
 /* ═══════════ S12 푸터 (24행) ═══════════ */
-.sec-footer { min-height: calc(24 * var(--cell)); background: var(--tan); }
-.footer-box  { grid-column: 1 / 75;  grid-row: 2 / 23; background: #000; border-radius: 40px 40px 0 0; }
+.sec-footer { background: var(--tan); }
+.footer-box  { grid-column: 1 / 75;  grid-row: 2 / 23; background: #000; border-radius: 40px 40px 0 0; margin-bottom: -1px; }
 .footer-logo { grid-column: 34 / 42; grid-row: 4 / 8;   z-index: 7; }
 .footer-desc { grid-column: 2 / 74;  grid-row: 10 / 13; justify-content: center; text-align: center; font-size: 14px; line-height: 1.8; color: #fff; }
 .footer-sns  { grid-column: 2 / 74;  grid-row: 14 / 16; justify-content: center; text-align: center; font-size: 14px; line-height: 1.8; color: #fff; text-decoration: none; }
