@@ -180,6 +180,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .chun-caption  { grid-column: 2 / 40;  grid-row: 254 / 256; font-size: 21px; line-height: 1.5; color: #2f343a; }
 .chun-endquote { grid-column: 41 / 74; grid-row: 222 / 244; text-align: center; font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
 .chun-walking  { grid-column: 1 / 75;  grid-row: 260 / 295; z-index: 2; }
+.chun-walking-shade { grid-column: 1 / 75; grid-row: 260 / 295; z-index: 3; background: rgba(112, 75, 41, 0.5); pointer-events: none; }
 
 /* ═══════════ S8 지붕 2 (33행) ═══════════ */
 .sec-roof2 { min-height: calc(33 * var(--cell)); }
