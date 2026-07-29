@@ -1,0 +1,575 @@
+/* ─────────────────────────────────────────────
+   A.OULL 파트너 장인 모집 랜딩페이지
+   ───────────────────────────────────────────── */
+
+:root {
+  --tan: #cca884;
+  --accent: #df7f63;
+  --cream: #fff7ef;
+  --cream-soft: #f8efe7;
+  --ink: #1b1818;
+  --taupe: #746960;
+  --light: #ececec;
+  --page-bg: #f5f5f5;
+  --content-w: 1240px;
+  --narrow-w: 980px;
+  --font: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--page-bg);
+  color: var(--ink);
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+img { max-width: 100%; display: block; }
+
+main { background: var(--tan); }
+
+/* ── 공통 버튼 ── */
+.btn {
+  display: inline-block;
+  min-width: 270px;
+  padding: 13px 40px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.btn:hover { opacity: 0.88; transform: translateY(-2px); }
+.btn--accent { background: var(--accent); color: #fff; }
+.btn--dark { background: var(--ink); color: #fff; }
+
+/* ═══════════ 히어로 ═══════════ */
+.hero {
+  position: relative;
+  min-height: min(100vh, 930px);
+  background: url("../assets/img/hero-bg.jpg") center / cover no-repeat;
+  display: flex;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 12, 5, 0.45);
+}
+.hero__inner {
+  position: relative;
+  width: 100%;
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 36px 24px 90px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__logo { width: 142px; }
+.hero__center {
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.hero__title {
+  font-size: clamp(32px, 4.2vw, 50px);
+  font-weight: 800;
+  line-height: 1.42;
+}
+.hero__sub {
+  margin-top: 28px;
+  font-size: 16px;
+  color: var(--cream-soft);
+}
+.hero__actions {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+}
+
+/* ═══════════ 브랜드 소개 ═══════════ */
+.brand {
+  padding: 110px 24px 130px;
+  text-align: center;
+}
+.brand__illust {
+  width: min(460px, 80%);
+  margin: 0 auto 70px;
+}
+.brand__lead {
+  font-size: clamp(19px, 2vw, 25px);
+  font-weight: 500;
+  line-height: 1.75;
+}
+.brand__lead + .brand__lead { margin-top: 44px; }
+
+/* ═══════════ Vision ═══════════ */
+.vision {
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 60px 24px 0;
+}
+.vision__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.vision__head-left { flex: 1; }
+.vision__mark { width: 150px; }
+.vision__caption {
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.vision__heading {
+  margin-top: 14px;
+  font-size: clamp(24px, 2.6vw, 32px);
+  font-weight: 800;
+  line-height: 1.4;
+}
+.vision__rule {
+  flex: 1.2;
+  height: 1px;
+  margin-top: 130px;
+  background: rgba(248, 239, 231, 0.6);
+}
+.vision__wordmark { width: min(330px, 26vw); margin-top: 100px; }
+.vision__statement {
+  margin-top: 110px;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 800;
+  line-height: 1.55;
+}
+.vision__desc {
+  margin-top: 60px;
+  text-align: center;
+  color: var(--cream);
+  font-size: 16px;
+  line-height: 1.9;
+}
+.vision__illust {
+  width: min(1300px, 96%);
+  margin: 70px auto 0;
+}
+
+/* ═══════════ Why ═══════════ */
+.why {
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 90px 24px 40px;
+}
+.why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+}
+.why__mark { width: 140px; }
+.why__heading {
+  margin-top: 60px;
+  color: var(--cream);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 500;
+  line-height: 1.9;
+}
+.why__questions { list-style: none; }
+.why__questions li {
+  font-size: clamp(18px, 1.8vw, 23px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+.why__questions li + li { margin-top: 52px; }
+.why__illust {
+  width: min(520px, 70%);
+  margin: 80px auto 0;
+}
+
+/* ═══════════ How ═══════════ */
+.how {
+  max-width: var(--narrow-w);
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+}
+.how__mark { width: 140px; margin: 0 auto; }
+.how__quote {
+  margin-top: 55px;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 110px;
+}
+.feature__media { overflow: hidden; }
+.feature__media img { width: 100%; height: 100%; object-fit: cover; }
+.feature__media--round-l { border-radius: 200px 200px 200px 24px; }
+.feature__media--round-r { border-radius: 200px 200px 24px 200px; }
+.feature__media--card {
+  border-radius: 40px 40px 40px 8px;
+  aspect-ratio: 3 / 2;
+}
+.feature__media--card img { object-position: bottom; }
+.feature__label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.feature__heading {
+  margin-top: 14px;
+  color: #fff;
+  font-size: clamp(20px, 2.2vw, 27px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+.feature__desc {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/* ═══════════ 파트너 제안 ═══════════ */
+.invite {
+  padding: 130px 24px 150px;
+  text-align: center;
+}
+.invite__text {
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.8;
+}
+.invite__text strong { font-weight: 800; }
+.invite .btn { margin-top: 48px; min-width: 270px; }
+
+/* ═══════════ 사례 (두석장 / 옻칠장) ═══════════ */
+.case { overflow: hidden; }
+.case__roof {
+  width: min(880px, 70%);
+}
+.case__roof--left { margin-right: auto; }
+.case__roof--right { margin-left: auto; margin-top: 90px; }
+
+.case__inner {
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+.case__titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.case__title {
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+.case__name {
+  text-align: right;
+  font-size: clamp(26px, 3.4vw, 40px);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: 0.12em;
+}
+.case__name-en { letter-spacing: 0.02em; }
+.case__meta {
+  margin-top: 26px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.case__meta strong { font-size: 20px; font-weight: 800; }
+
+.case p.case__quote {
+  color: var(--cream);
+  font-size: clamp(30px, 3.6vw, 44px);
+  font-weight: 500;
+  line-height: 1.5;
+}
+.case__quote--left { margin: 60px 0 50px; }
+.case__quote--center { text-align: center; }
+.case__quote--solo { margin: 110px 0; }
+
+.case__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 40px;
+}
+.case__cols--balance { align-items: center; margin-top: 120px; }
+.case__text p {
+  font-size: 17px;
+  line-height: 1.85;
+}
+.case__text p + p { margin-top: 34px; }
+.case__text--center {
+  margin-top: 110px;
+  text-align: center;
+}
+.case__photos {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.case__grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 120px;
+}
+.case__single { width: 100%; }
+.case__captioned figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.case__dots {
+  width: min(370px, 46%);
+  margin: 130px auto 40px;
+}
+.case__stagger {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 100px;
+  align-items: start;
+}
+.case__stagger > img { margin-top: 120px; }
+.case__stagger .case__text-block {
+  margin-top: 60px;
+  font-size: 17px;
+  line-height: 1.85;
+  text-align: right;
+}
+
+.bridge-photo {
+  width: 100%;
+  max-height: 620px;
+  object-fit: cover;
+}
+
+/* ═══════════ 모집 + 신청 폼 ═══════════ */
+.recruit {
+  background: var(--light);
+  padding: 100px 24px 120px;
+}
+.recruit__inner {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+.recruit__heading {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 900;
+  line-height: 1.55;
+}
+.recruit__sub {
+  margin-top: 34px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.recruit__progress { margin-top: 70px; }
+.recruit__progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--taupe);
+  margin-bottom: 10px;
+}
+.recruit__bar {
+  height: 8px;
+  border-radius: 999px;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+.recruit__bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  transition: width 1.2s ease;
+}
+
+.countdown {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+}
+.countdown__unit { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.countdown__num {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 4.4vw, 46px);
+  font-weight: 700;
+  line-height: 1;
+}
+.countdown__label { font-size: 13px; color: var(--taupe); }
+.countdown__colon {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.4vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.recruit__benefit-title {
+  margin-top: 70px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.recruit__benefits {
+  margin-top: 24px;
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+.recruit__benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.recruit__benefits img { width: 18px; }
+
+.recruit__closing {
+  margin-top: 90px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ── 신청 폼 카드 ── */
+.apply-form {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.07);
+  text-align: left;
+}
+.apply-form__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.apply-form__sub {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--taupe);
+}
+.apply-form__field { display: block; margin-top: 24px; }
+.apply-form__label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.apply-form__label em {
+  color: var(--accent);
+  font-style: normal;
+}
+.apply-form__field input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.apply-form__field input::placeholder { color: #b5b5b5; }
+.apply-form__field input:focus { border-color: var(--accent); }
+.apply-form__field input.is-invalid { border-color: #e04b3a; }
+.apply-form__submit {
+  width: 100%;
+  margin-top: 36px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.apply-form__submit:hover { opacity: 0.9; }
+.apply-form__done {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ═══════════ 마무리 일러스트 · 푸터 ═══════════ */
+.palace-illust {
+  width: min(1340px, 96%);
+  margin: 110px auto 0;
+  padding-bottom: 90px;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 70px 24px 60px;
+}
+.footer__logo { width: 150px; margin: 0 auto; }
+.footer__desc {
+  margin-top: 34px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.footer__sns {
+  display: inline-block;
+  margin-top: 26px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.footer__sns:hover { text-decoration: underline; }
+.footer__copy {
+  margin-top: 26px;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/* ═══════════ 반응형 ═══════════ */
+@media (max-width: 820px) {
+  .vision__head { flex-direction: column; gap: 20px; }
+  .vision__rule { display: none; }
+  .vision__wordmark { width: 220px; margin: 10px 0 0; }
+  .why__grid,
+  .feature,
+  .case__cols,
+  .case__grid2,
+  .case__stagger { grid-template-columns: 1fr; }
+  .feature--media-right .feature__media { order: -1; }
+  .why__questions li + li { margin-top: 32px; }
+  .case__stagger > img { margin-top: 0; }
+  .case__stagger .case__text-block { text-align: left; margin-top: 0; }
+  .case__titlebar { flex-direction: column; }
+  .case__name { text-align: left; }
+  .apply-form { padding: 36px 22px; }
+  .countdown { gap: 16px; }
+}
