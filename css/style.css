@@ -17,8 +17,6 @@
   --cell: 17.2222px;
   --font: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-serif: "Georgia", "Times New Roman", serif;
-  /* 대형 타이포용 디스플레이 폰트 — 마음에 안 들면 "Noto Sans KR"로 교체 */
-  --font-display: "MaruBuri", "Gowun Batang", "Noto Serif KR", serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -83,8 +81,8 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   background: url("../assets/img/hero-bg.jpg") center / cover no-repeat #1b1207;
 }
 .hero-logo  { grid-column: 2 / 10;  grid-row: 1 / 5;  z-index: 7; object-fit: contain; width: 100%; height: 100%; }
-.hero-title { grid-column: 2 / 74;  grid-row: 17 / 30; z-index: 3; text-align: center; font-family: var(--font-display); font-size: 62px; font-weight: 700; line-height: 1.4; color: #fff7ef; }
-.hero-sub   { grid-column: 2 / 74;  grid-row: 35 / 39; z-index: 5; text-align: center; font-size: 21px; line-height: 1.6; color: #fff7ef; }
+.hero-title { grid-column: 2 / 74;  grid-row: 17 / 30; z-index: 3; text-align: center; font-size: 62px; font-weight: 800; line-height: 1.4; color: #fff7ef; }
+.hero-sub   { grid-column: 2 / 74;  grid-row: 35 / 39; z-index: 5; text-align: center; font-size: 21px; line-height: 1.6; color: rgba(255, 247, 239, 0.7); }
 .hero-btn1  { grid-column: 30 / 46; grid-row: 42 / 45; z-index: 2; }
 .hero-btn2  { grid-column: 30 / 46; grid-row: 47 / 50; z-index: 2; }
 
@@ -113,7 +111,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 /* ═══════════ S4 How (128행) ═══════════ */
 .sec-how { min-height: calc(128 * var(--cell)); }
 .how-mark  { grid-column: 31 / 43; grid-row: 1 / 5; z-index: 7; }
-.how-quote { grid-column: 2 / 74;  grid-row: 6 / 13; text-align: center; font-family: var(--font-display); font-size: 44px; font-weight: 700; line-height: 1.35; color: #fff; }
+.how-quote { grid-column: 2 / 74;  grid-row: 6 / 13; text-align: center; font-size: 44px; font-weight: 800; line-height: 1.35; color: #fff; }
 
 .blob-l { border-radius: 1000px 900px 1000px 16px; }
 .blob-r { border-radius: 900px 1000px 16px 1000px; }
@@ -148,27 +146,27 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 
 /* ═══════════ S6 두석장 (194행) ═══════════ */
 .sec-kim { min-height: calc(194 * var(--cell)); }
-.kim-title    { grid-column: 3 / 74;  grid-row: 4 / 11;    font-family: var(--font-display); font-size: 80px; font-weight: 700; line-height: 1.15; }
-.kim-name     { grid-column: 19 / 74; grid-row: 4 / 11;    text-align: right; font-family: var(--font-display); font-size: 60px; font-weight: 700; line-height: 1.25; }
+.kim-title    { grid-column: 3 / 74;  grid-row: 4 / 11;    font-size: 80px; font-weight: 800; line-height: 1.15; }
+.kim-name     { grid-column: 19 / 74; grid-row: 4 / 11;    text-align: right; font-size: 60px; font-weight: 800; line-height: 1.25; }
 .kim-meta     { grid-column: 3 / 32;  grid-row: 10 / 18;   font-size: 35px; font-weight: 800; line-height: 1.3; }
 .kim-portrait { grid-column: 42 / 74; grid-row: 12 / 54; }
-.kim-quote    { grid-column: 2 / 41;  grid-row: 17 / 30;   font-family: var(--font-display); font-size: 75px; font-weight: 400; line-height: 1.25; color: #fff; }
+.kim-quote    { grid-column: 2 / 41;  grid-row: 17 / 30;   font-size: 75px; font-weight: 400; line-height: 1.25; color: #fff; }
 .kim-story1   { grid-column: 2 / 39;  grid-row: 35 / 48;   font-size: 28px; line-height: 1.5; color: #fff; }
 .kim-father   { grid-column: 35 / 74; grid-row: 56 / 78; }
 .kim-story2   { grid-column: 2 / 33;  grid-row: 55 / 79;   font-size: 28px; line-height: 1.5; color: #fff; }
 .kim-hardware { grid-column: 2 / 35;  grid-row: 88 / 127; }
 .kim-hands    { grid-column: 41 / 74; grid-row: 88 / 127; }
 .kim-workshop { grid-column: 2 / 33;  grid-row: 134 / 172; }
-.kim-endquote { grid-column: 34 / 74; grid-row: 143 / 165; text-align: center; font-family: var(--font-display); font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
+.kim-endquote { grid-column: 34 / 74; grid-row: 143 / 165; text-align: center; font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
 .kim-dots     { grid-column: 28 / 50; grid-row: 185 / 191; }
 
 /* ═══════════ S7 옻칠장 (294행) ═══════════ */
 .sec-chun { min-height: calc(294 * var(--cell)); }
 .chun-lacquer  { grid-column: 1 / 75;  grid-row: 8 / 43; }
-.chun-title    { grid-column: 3 / 74;  grid-row: 45 / 52;   font-family: var(--font-display); font-size: 80px; font-weight: 700; line-height: 1.15; }
-.chun-name     { grid-column: 19 / 74; grid-row: 45 / 52;   text-align: right; font-family: var(--font-display); font-size: 60px; font-weight: 700; line-height: 1.25; }
+.chun-title    { grid-column: 3 / 74;  grid-row: 45 / 52;   font-size: 80px; font-weight: 800; line-height: 1.15; }
+.chun-name     { grid-column: 19 / 74; grid-row: 45 / 52;   text-align: right; font-size: 60px; font-weight: 800; line-height: 1.25; }
 .chun-meta     { grid-column: 3 / 32;  grid-row: 51 / 59;   font-size: 35px; font-weight: 800; line-height: 1.3; }
-.chun-quote    { grid-column: 19 / 58; grid-row: 66 / 76;   text-align: center; font-family: var(--font-display); font-size: 75px; font-weight: 400; line-height: 1.25; color: #fff; }
+.chun-quote    { grid-column: 19 / 58; grid-row: 66 / 76;   text-align: center; font-size: 75px; font-weight: 400; line-height: 1.25; color: #fff; }
 .chun-tables   { grid-column: 2 / 27;  grid-row: 88 / 120;  z-index: 7; }
 .chun-text1    { grid-column: 29 / 74; grid-row: 90 / 103;  font-size: 28px; line-height: 1.5; color: #fff; }
 .chun-carving  { grid-column: 25 / 50; grid-row: 108 / 140; z-index: 12; }
@@ -180,7 +178,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .chun-text3    { grid-column: 2 / 74;  grid-row: 191 / 206; justify-content: center; text-align: center; font-size: 28px; line-height: 1.5; color: #fff; }
 .chun-village  { grid-column: 2 / 40;  grid-row: 210 / 254; z-index: 3; }
 .chun-caption  { grid-column: 2 / 40;  grid-row: 254 / 256; font-size: 21px; line-height: 1.5; color: #2f343a; }
-.chun-endquote { grid-column: 41 / 74; grid-row: 222 / 244; text-align: center; font-family: var(--font-display); font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
+.chun-endquote { grid-column: 41 / 74; grid-row: 222 / 244; text-align: center; font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
 .chun-walking  { grid-column: 1 / 75;  grid-row: 260 / 295; z-index: 2; }
 
 /* ═══════════ S8 지붕 2 (33행) ═══════════ */
