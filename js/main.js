@@ -3,11 +3,11 @@
   "use strict";
 
   /* ── 신청 현황 진행 바 ── */
-  var progress = document.querySelector(".recruit__progress");
+  var progress = document.querySelector(".re-bar");
   if (progress) {
     var total = Number(progress.dataset.total) || 12;
     var filled = Number(progress.dataset.filled) || 0;
-    var fill = progress.querySelector(".recruit__bar-fill");
+    var fill = progress.querySelector(".re-bar-fill");
     // 화면에 들어올 때 채워지는 애니메이션
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
