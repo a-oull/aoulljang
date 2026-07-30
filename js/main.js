@@ -43,9 +43,21 @@
   }
 
   /* ── 신청 폼 ── */
-  // 정적 호스팅(GitHub Pages)이므로 기본은 접수 완료 표시만 한다.
-  // 실제 수집이 필요하면 Formspree/Google Forms 등의 엔드포인트를 지정할 것.
-  var FORM_ENDPOINT = "";
+  // FormSubmit(가입 불필요)으로 접수 메일을 발송한다.
+  // 최초 1회 수신함에서 활성화 확인이 필요하다.
+  var FORM_ENDPOINT = "https://formsubmit.co/ajax/aoull.kr@gmail.com";
+  // 메일에 표시될 컬럼명 매핑
+  var FIELD_LABELS = {
+    name: "이름",
+    company: "회사(공방)",
+    email: "이메일",
+    contact: "연락처",
+    birth: "생년월일",
+    region: "지역",
+    craft: "전통공예 분야",
+    grade: "국가무형유산 등급",
+    organization: "소속 기관"
+  };
 
   var form = document.getElementById("apply-form");
   if (form) {
@@ -59,19 +71,36 @@
       });
       if (!valid) return;
 
-      var finish = function () {
-        form.querySelector(".apply-form__done").hidden = false;
-        form.querySelector(".apply-form__submit").disabled = true;
-      };
+      var submitBtn = form.querySelector(".apply-form__submit");
+      var doneMsg = form.querySelector(".apply-form__done");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "전송 중...";
 
-      if (FORM_ENDPOINT) {
-        var data = new FormData(form);
-        fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
-          .then(finish)
-          .catch(finish);
-      } else {
-        finish();
-      }
+      var payload = {
+        _subject: "[A.OULL] 파트너 장인 신청 접수",
+        _template: "table",
+        _captcha: "false"
+      };
+      Object.keys(FIELD_LABELS).forEach(function (key) {
+        var input = form.querySelector('[name="' + key + '"]');
+        payload[FIELD_LABELS[key]] = input ? input.value.trim() : "";
+      });
+
+      fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function () {
+          doneMsg.hidden = false;
+          submitBtn.textContent = "신청 완료";
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "신청하기";
+          alert("전송에 실패했습니다. 잠시 후 다시 시도해주세요.");
+        });
     });
   }
 })();
