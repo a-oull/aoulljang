@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-oull.github.io/aoulljang/sitemap.xml
