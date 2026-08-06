@@ -286,7 +286,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   .sec-hero { min-height: calc(53 * var(--cell)); }
   .sec-brand { min-height: calc(114 * var(--cell)); }
   .sec-why { min-height: calc(50 * var(--cell)); }
-  .sec-how { min-height: calc(138 * var(--cell)); }
+  .sec-how { min-height: calc(146 * var(--cell)); }
   .sec-roof1 { min-height: calc(18 * var(--cell)); }
   .sec-kim { min-height: calc(190 * var(--cell)); }
   .sec-chun { min-height: calc(268 * var(--cell)); }
@@ -324,22 +324,22 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   .why-trees { grid-column: 6 / 22; grid-row: 38 / 45; }
   .how-mark { grid-column: 2 / 6; grid-row: 2 / 5; }
   .how-quote { grid-column: 3 / 25; grid-row: 7 / 13; font-size: 2.361rem; line-height: 1.2; text-align: center; }
-  .f1-img { grid-column: 3 / 25; grid-row: 17 / 30; }
-  .f1-label { grid-column: 3 / 25; grid-row: 31 / 33; font-size: 1.049rem; line-height: 1.5; }
-  .f1-heading { grid-column: 3 / 25; grid-row: 33 / 37; font-size: 1.574rem; line-height: 1.2; }
-  .f1-desc { grid-column: 3 / 25; grid-row: 38 / 45; font-size: 1.049rem; line-height: 1.5; }
-  .f2-img { grid-column: 3 / 25; grid-row: 48 / 61; }
-  .f2-label { grid-column: 3 / 25; grid-row: 62 / 64; font-size: 1.049rem; line-height: 1.5; }
-  .f2-heading { grid-column: 3 / 25; grid-row: 64 / 68; font-size: 1.574rem; line-height: 1.2; }
-  .f2-desc { grid-column: 3 / 25; grid-row: 69 / 75; font-size: 1.049rem; line-height: 1.5; }
-  .f3-img { grid-column: 3 / 25; grid-row: 76 / 89; }
-  .f3-label { grid-column: 3 / 25; grid-row: 90 / 92; font-size: 1.049rem; line-height: 1.5; }
-  .f3-heading { grid-column: 3 / 25; grid-row: 92 / 96; font-size: 1.574rem; line-height: 1.2; }
-  .f3-desc { grid-column: 3 / 25; grid-row: 97 / 103; font-size: 1.049rem; line-height: 1.5; }
-  .f4-img { grid-column: 3 / 25; grid-row: 105 / 118; }
-  .f4-label { grid-column: 3 / 25; grid-row: 119 / 121; font-size: 1.049rem; line-height: 1.5; }
-  .f4-heading { grid-column: 3 / 25; grid-row: 121 / 125; font-size: 1.574rem; line-height: 1.2; }
-  .f4-desc { grid-column: 3 / 25; grid-row: 126 / 132; font-size: 1.049rem; line-height: 1.5; }
+  .f1-img { grid-column: 3 / 25; grid-row: 17 / 32; }
+  .f1-label { grid-column: 3 / 25; grid-row: 33 / 35; font-size: 1.049rem; line-height: 1.5; }
+  .f1-heading { grid-column: 3 / 25; grid-row: 35 / 39; font-size: 1.574rem; line-height: 1.2; }
+  .f1-desc { grid-column: 3 / 25; grid-row: 40 / 47; font-size: 1.049rem; line-height: 1.5; }
+  .f2-img { grid-column: 3 / 25; grid-row: 50 / 65; }
+  .f2-label { grid-column: 3 / 25; grid-row: 66 / 68; font-size: 1.049rem; line-height: 1.5; }
+  .f2-heading { grid-column: 3 / 25; grid-row: 68 / 72; font-size: 1.574rem; line-height: 1.2; }
+  .f2-desc { grid-column: 3 / 25; grid-row: 73 / 79; font-size: 1.049rem; line-height: 1.5; }
+  .f3-img { grid-column: 3 / 25; grid-row: 80 / 95; }
+  .f3-label { grid-column: 3 / 25; grid-row: 96 / 98; font-size: 1.049rem; line-height: 1.5; }
+  .f3-heading { grid-column: 3 / 25; grid-row: 98 / 102; font-size: 1.574rem; line-height: 1.2; }
+  .f3-desc { grid-column: 3 / 25; grid-row: 103 / 109; font-size: 1.049rem; line-height: 1.5; }
+  .f4-img { grid-column: 3 / 25; grid-row: 111 / 126; }
+  .f4-label { grid-column: 3 / 25; grid-row: 127 / 129; font-size: 1.049rem; line-height: 1.5; }
+  .f4-heading { grid-column: 3 / 25; grid-row: 129 / 133; font-size: 1.574rem; line-height: 1.2; }
+  .f4-desc { grid-column: 3 / 25; grid-row: 134 / 140; font-size: 1.049rem; line-height: 1.5; }
   .roof1-img { grid-column: 1 / 25; grid-row: 1 / 19; }
   .kim-title { grid-column: 2 / 26; grid-row: 2 / 7; font-size: 2.951rem; line-height: 1.15; }
   .kim-name { grid-column: 2 / 26; grid-row: 13 / 20; font-size: 2.951rem; line-height: 1.15; text-align: right; }
