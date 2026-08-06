@@ -108,7 +108,7 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .vision-wordmark { grid-column: 54 / 74; grid-row: 84 / 91; }
 .vision-statement{ grid-column: 3 / 73;  grid-row: 98 / 105; text-align: center; font-size: 40px; font-weight: 800; line-height: 1.4; color: #fff; }
 .vision-desc     { grid-column: 17 / 63; grid-row: 108 / 112; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; color: #fff; }
-img.vision-illust { grid-column: 1 / 75;  grid-row: 118 / 175; z-index: 6; object-fit: contain; }
+.vision-illust   { grid-column: 1 / 75;  grid-row: 118 / 175; z-index: 6; }
 
 /* ═══════════ S3 Why (52행) ═══════════ */
 .sec-why { min-height: calc(60 * var(--cell)); }
@@ -284,7 +284,7 @@ img.vision-illust { grid-column: 1 / 75;  grid-row: 118 / 175; z-index: 6; objec
     grid-template-columns: minmax(12px, 1fr) repeat(24, minmax(0, var(--cell))) minmax(12px, 1fr);
   }
   .sec-hero { min-height: calc(53 * var(--cell)); }
-  .sec-brand { min-height: calc(116 * var(--cell)); }
+  .sec-brand { min-height: calc(114 * var(--cell)); }
   .sec-why { min-height: calc(50 * var(--cell)); }
   .sec-how { min-height: calc(138 * var(--cell)); }
   .sec-roof1 { min-height: calc(18 * var(--cell)); }
@@ -316,7 +316,7 @@ img.vision-illust { grid-column: 1 / 75;  grid-row: 118 / 175; z-index: 6; objec
   .vision-wordmark { grid-column: 10 / 18; grid-row: 67 / 71; }
   .vision-statement { grid-column: 1 / 27; grid-row: 74 / 84; font-size: 2.23rem; line-height: 1.2; text-align: center; }
   .vision-desc { grid-column: 4 / 24; grid-row: 87 / 94; font-size: 1.049rem; line-height: 1.5; text-align: center; }
-  .vision-illust { grid-column: 1 / 27; grid-row: 97 / 115; }
+  .vision-illust { grid-column: 1 / 27; grid-row: 96 / 114; }
   .why-mark { grid-column: 11 / 17; grid-row: 4 / 7; }
   .why-heading { grid-column: 2 / 26; grid-row: 9 / 15; font-size: 1.18rem; line-height: 1.6; text-align: center; }
   .why-dots { grid-column: 10 / 18; grid-row: 17 / 19; }
