@@ -88,61 +88,60 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .hero-title { grid-column: 2 / 74;  grid-row: 18 / 30; z-index: 3; text-align: center; font-size: 62px; font-weight: 800; line-height: 1.3; color: #fff7ef; }
 .hero-sub   { grid-column: 2 / 74;  grid-row: 34 / 39; z-index: 5; text-align: center; font-size: 21px; line-height: 1.5; color: rgba(255, 247, 239, 0.7); }
 
-/* ═══════════ S2 브랜드 + Vision (159행) ═══════════ */
-.sec-brand { min-height: calc(159 * var(--cell)); }
+/* ═══════════ S2 브랜드 + Vision (175행) ═══════════ */
+.sec-brand { min-height: calc(175 * var(--cell)); }
 .brand-illust    { grid-column: 24 / 52; grid-row: 8 / 20; }
 .brand-wordmark  { grid-column: 31 / 46; grid-row: 20 / 22; }
-.brand-intro     { grid-column: 13 / 69; grid-row: 27 / 39; text-align: center; font-size: 35px; line-height: 1.5; }
-.brand-intro2    { grid-column: 13 / 69; grid-row: 43 / 48; text-align: center; font-size: 35px; line-height: 1.5; }
-.brand-btn1      { grid-column: 30 / 46; grid-row: 50 / 53; z-index: 2; }
-.brand-btn2      { grid-column: 30 / 46; grid-row: 54 / 57; z-index: 2; }
-.vision-mark     { grid-column: 5 / 16;  grid-row: 57 / 61; }
-.vision-caption  { grid-column: 5 / 37;  grid-row: 62 / 63; font-size: 21px; line-height: 1.2; color: #fff; }
-.vision-heading  { grid-column: 5 / 23;  grid-row: 66 / 69; margin-top: -25px; font-size: 44px; font-weight: 800; line-height: 1.15; color: #fff; }
-.vision-rule     { grid-column: 23 / 52; grid-row: 65 / 68; height: 1px; align-self: center; background: rgba(248, 239, 231, 0.6); }
-.vision-wordmark { grid-column: 54 / 74; grid-row: 63 / 70; }
-.vision-statement{ grid-column: 17 / 63; grid-row: 77 / 87; margin-top: -26px; text-align: center; font-size: 40px; font-weight: 800; line-height: 1.4; color: #fff; }
-.vision-desc     { grid-column: 17 / 63; grid-row: 91 / 95; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; color: #fff; }
-.vision-illust   { grid-column: 1 / 75;  grid-row: 102 / 159; z-index: 6; object-fit: contain; }
+.brand-headline  { grid-column: 13 / 69; grid-row: 24 / 27; text-align: center; font-size: 35px; line-height: 1.5; }
+.brand-intro     { grid-column: 13 / 69; grid-row: 29 / 37; text-align: center; font-size: 35px; line-height: 1.5; }
+.brand-intro2    { grid-column: 13 / 69; grid-row: 39 / 44; text-align: center; font-size: 35px; line-height: 1.5; }
+.brand-intro3    { grid-column: 13 / 69; grid-row: 46 / 51; text-align: center; font-size: 35px; line-height: 1.5; }
+.brand-divider   { grid-column: 13 / 69; grid-row: 53 / 55; text-align: center; font-size: 35px; line-height: 1.5; }
+.brand-invite    { grid-column: 13 / 69; grid-row: 56 / 59; text-align: center; font-size: 35px; line-height: 1.5; }
+.brand-invite2   { grid-column: 13 / 69; grid-row: 60 / 65; text-align: center; font-size: 32px; line-height: 1.5; }
+.brand-btn1      { grid-column: 30 / 46; grid-row: 67 / 70; z-index: 2; }
+.brand-btn2      { grid-column: 30 / 46; grid-row: 71 / 74; z-index: 2; }
+.vision-mark     { grid-column: 5 / 16;  grid-row: 78 / 82; }
+.vision-caption  { grid-column: 5 / 37;  grid-row: 83 / 84; font-size: 21px; line-height: 1.2; color: #fff; }
+.vision-heading  { grid-column: 5 / 28;  grid-row: 87 / 90; margin-top: -25px; font-size: 44px; font-weight: 800; line-height: 1.15; color: #fff; }
+.vision-rule     { grid-column: 28 / 52; grid-row: 86 / 89; height: 1px; align-self: center; background: rgba(248, 239, 231, 0.6); }
+.vision-wordmark { grid-column: 54 / 74; grid-row: 84 / 91; }
+.vision-statement{ grid-column: 3 / 73;  grid-row: 98 / 105; text-align: center; font-size: 40px; font-weight: 800; line-height: 1.4; color: #fff; }
+.vision-desc     { grid-column: 17 / 63; grid-row: 108 / 112; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; color: #fff; }
+.vision-illust   { grid-column: 1 / 75;  grid-row: 118 / 175; z-index: 6; object-fit: contain; }
 
 /* ═══════════ S3 Why (52행) ═══════════ */
 .sec-why { min-height: calc(52 * var(--cell)); }
-.why-mark      { grid-column: 3 / 15;  grid-row: 9 / 14;  z-index: 7; }
-.why-heading   { grid-column: 2 / 27;  grid-row: 14 / 29; font-size: 44px; font-weight: 400; line-height: 1.5; color: #fff; }
-.why-questions { grid-column: 33 / 74; grid-row: 9 / 30;  list-style: none; font-size: 30px; font-weight: 800; line-height: 1.5; white-space: pre-wrap; }
-.why-trees     { grid-column: 32 / 63; grid-row: 32 / 42; }
+.why-mark      { grid-column: 32 / 42; grid-row: 6 / 11;  z-index: 7; }
+.why-heading   { grid-column: 2 / 74;  grid-row: 13 / 18; text-align: center; font-size: 30px; font-weight: 400; line-height: 1.6; color: #fff; }
+.why-dots      { grid-column: 31 / 43; grid-row: 21 / 24; }
+.why-questions { grid-column: 2 / 74;  grid-row: 27 / 39; list-style: none; text-align: center; font-size: 28px; font-weight: 500; line-height: 1.5; white-space: pre-wrap; }
+.why-trees     { grid-column: 27 / 47; grid-row: 42 / 50; }
 
-/* ═══════════ S4 How (128행) ═══════════ */
-.sec-how { min-height: calc(128 * var(--cell)); }
+/* ═══════════ S4 How (110행) ═══════════ */
+.sec-how { min-height: calc(110 * var(--cell)); }
 .how-mark  { grid-column: 31 / 43; grid-row: 1 / 5; z-index: 7; }
 .how-quote { grid-column: 2 / 74;  grid-row: 6 / 13; text-align: center; font-size: 44px; font-weight: 800; line-height: 1.35; color: #fff; }
 
-.blob-l { border-radius: 1000px 900px 1000px 16px; }
-.blob-r { border-radius: 900px 1000px 16px 1000px; }
-
-.f1-img     { grid-column: 9 / 36;  grid-row: 19 / 36; }
+.f1-img     { grid-column: 8 / 35;  grid-row: 17 / 38; }
 .f1-label   { grid-column: 40 / 67; grid-row: 19 / 21; font-size: 20px; font-weight: 800; line-height: 1.5; color: #fff; }
 .f1-heading { grid-column: 40 / 67; grid-row: 21 / 26; font-size: 32px; font-weight: 700; line-height: 1.2; color: #fff; }
 .f1-desc    { grid-column: 40 / 68; grid-row: 28 / 36; font-size: 21px; line-height: 1.5; }
 
-.f2-img     { grid-column: 40 / 67; grid-row: 41 / 58; }
+.f2-img     { grid-column: 41 / 68; grid-row: 39 / 60; }
 .f2-label   { grid-column: 9 / 36;  grid-row: 41 / 43; font-size: 20px; font-weight: 800; line-height: 1.5; color: #fff; }
 .f2-heading { grid-column: 9 / 36;  grid-row: 43 / 48; font-size: 32px; font-weight: 700; line-height: 1.2; color: #fff; }
 .f2-desc    { grid-column: 9 / 36;  grid-row: 50 / 58; font-size: 21px; line-height: 1.5; }
 
-.f3-img     { grid-column: 9 / 36;  grid-row: 64 / 81; }
+.f3-img     { grid-column: 8 / 35;  grid-row: 62 / 83; }
 .f3-label   { grid-column: 40 / 67; grid-row: 64 / 66; font-size: 20px; font-weight: 800; line-height: 1.5; color: #fff; }
 .f3-heading { grid-column: 40 / 67; grid-row: 66 / 71; font-size: 32px; font-weight: 700; line-height: 1.2; color: #fff; }
 .f3-desc    { grid-column: 40 / 67; grid-row: 73 / 81; font-size: 21px; line-height: 1.5; }
 
-.f4-img     { grid-column: 40 / 67; grid-row: 87 / 104; }
+.f4-img     { grid-column: 41 / 68; grid-row: 85 / 106; }
 .f4-label   { grid-column: 9 / 36;  grid-row: 87 / 89;  font-size: 20px; font-weight: 800; line-height: 1.5; color: #fff; }
 .f4-heading { grid-column: 9 / 36;  grid-row: 89 / 94;  font-size: 32px; font-weight: 700; line-height: 1.2; color: #fff; }
 .f4-desc    { grid-column: 9 / 36;  grid-row: 96 / 104; font-size: 21px; line-height: 1.5; }
-
-.invite-text { grid-column: 2 / 74;  grid-row: 116 / 120; margin-top: -7px; text-align: center; font-size: 32px; font-weight: 400; line-height: 1.3; }
-.invite-text strong { font-weight: 700; }
-.invite-btn  { grid-column: 31 / 47; grid-row: 122 / 125; }
 
 /* ═══════════ S5 지붕 1 (33행) ═══════════ */
 .sec-roof1 { min-height: calc(33 * var(--cell)); }
@@ -162,10 +161,14 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .kim-hands    { grid-column: 41 / 74; grid-row: 88 / 127; }
 .kim-workshop { grid-column: 2 / 33;  grid-row: 134 / 172; }
 .kim-endquote { grid-column: 34 / 74; grid-row: 143 / 165; text-align: center; font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
+.kim-prod1     { grid-column: 37 / 50; grid-row: 166 / 181; }
+.kim-prod1-cap { grid-column: 37 / 50; grid-row: 181 / 184; font-size: 15px; line-height: 1.45; }
+.kim-prod2     { grid-column: 54 / 67; grid-row: 166 / 181; }
+.kim-prod2-cap { grid-column: 54 / 67; grid-row: 181 / 184; font-size: 15px; line-height: 1.45; }
 .kim-dots     { grid-column: 28 / 50; grid-row: 185 / 191; }
 
-/* ═══════════ S7 옻칠장 (294행) ═══════════ */
-.sec-chun { min-height: calc(294 * var(--cell)); }
+/* ═══════════ S7 옻칠장 (301행) ═══════════ */
+.sec-chun { min-height: calc(301 * var(--cell)); }
 .chun-lacquer  { grid-column: 1 / 75;  grid-row: 8 / 43; }
 .chun-title    { grid-column: 3 / 74;  grid-row: 45 / 52;   margin-top: 15px; font-size: 80px; font-weight: 800; line-height: 1.15; }
 .chun-name     { grid-column: 19 / 74; grid-row: 45 / 52;   z-index: 2; text-align: right; font-size: 60px; font-weight: 800; line-height: 1.05; }
@@ -183,36 +186,26 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
 .chun-village  { grid-column: 2 / 40;  grid-row: 210 / 254; z-index: 3; }
 .chun-caption  { grid-column: 2 / 40;  grid-row: 254 / 256; font-size: 21px; line-height: 1.5; color: #2f343a; }
 .chun-endquote { grid-column: 41 / 74; grid-row: 222 / 244; text-align: center; font-size: 65px; font-weight: 400; line-height: 1.35; color: #fff; }
-.chun-walking  { grid-column: 1 / 75;  grid-row: 260 / 295; z-index: 2; }
-.chun-walking-shade { grid-column: 1 / 75; grid-row: 260 / 295; z-index: 3; background: rgba(112, 75, 41, 0.5); pointer-events: none; }
+.chun-prod1     { grid-column: 42 / 55; grid-row: 246 / 261; }
+.chun-prod1-cap { grid-column: 42 / 55; grid-row: 261 / 264; font-size: 15px; line-height: 1.45; }
+.chun-prod2     { grid-column: 59 / 72; grid-row: 246 / 261; }
+.chun-prod2-cap { grid-column: 59 / 72; grid-row: 261 / 264; font-size: 15px; line-height: 1.45; }
+.chun-walking  { grid-column: 1 / 75;  grid-row: 266 / 301; z-index: 2; }
+.chun-walking-shade { grid-column: 1 / 75; grid-row: 266 / 301; z-index: 3; background: rgba(112, 75, 41, 0.5); pointer-events: none; }
 
 /* ═══════════ S8 지붕 2 (33행) ═══════════ */
 .sec-roof2 { min-height: calc(33 * var(--cell)); }
 .roof2-img { grid-column: 31 / 75; grid-row: 1 / 34; }
 
-/* ═══════════ S9 모집 CTA (61행) ═══════════ */
-.sec-recruit { min-height: calc(61 * var(--cell)); background: var(--light); }
-.re-lead    { grid-column: 2 / 74;  grid-row: 4 / 6;   justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; }
-.re-heading { grid-column: 2 / 74;  grid-row: 8 / 15;  justify-content: center; text-align: center; font-size: 44px; font-weight: 800; line-height: 1.2; }
-.re-sub     { grid-column: 2 / 74;  grid-row: 21 / 24; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; }
-.re-label-l { grid-column: 19 / 33; grid-row: 30 / 32; font-size: 16px; line-height: 1.5; }
-.re-label-r { grid-column: 43 / 57; grid-row: 30 / 32; justify-content: flex-end; text-align: right; font-size: 16px; line-height: 1.5; }
-.re-bar     { grid-column: 19 / 57; grid-row: 32 / 33; border-radius: 100px; background: #d9d9d9; overflow: hidden; align-self: center; height: 10px; }
+/* ═══════════ S9 모집 CTA (40행) ═══════════ */
+.sec-recruit { min-height: calc(40 * var(--cell)); background: var(--light); }
+.re-heading { grid-column: 2 / 74;  grid-row: 5 / 14;  justify-content: center; text-align: center; font-size: 44px; font-weight: 800; line-height: 1.2; }
+.re-sub     { grid-column: 2 / 74;  grid-row: 16 / 22; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; }
+.re-label-l { grid-column: 19 / 33; grid-row: 25 / 27; font-size: 16px; line-height: 1.5; }
+.re-label-r { grid-column: 43 / 57; grid-row: 25 / 27; justify-content: flex-end; text-align: right; font-size: 16px; line-height: 1.5; }
+.re-bar     { grid-column: 19 / 57; grid-row: 27 / 28; border-radius: 100px; background: #d9d9d9; overflow: hidden; align-self: center; height: 10px; }
 .re-bar-fill{ height: 100%; width: 0; border-radius: 100px; background: var(--accent); transition: width 1.2s ease; }
-
-.countdown { grid-column: 27 / 49; grid-row: 37 / 44; justify-content: center; gap: 28px; align-items: flex-start; align-self: center; }
-.cd-unit  { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-.cd-num   { font-family: var(--font-serif); font-size: 56px; font-weight: 800; line-height: 1.1; }
-.cd-label { font-size: 14px; color: var(--taupe); }
-.cd-colon { font-family: var(--font-serif); font-size: 44px; font-weight: 800; line-height: 1.4; }
-
-.re-benefit-title { grid-column: 34 / 42; grid-row: 47 / 50; justify-content: center; text-align: center; font-size: 20px; line-height: 1.5; }
-.re-leaf1 { grid-column: 31 / 33; grid-row: 51 / 52; }
-.re-item1 { grid-column: 33 / 48; grid-row: 51 / 52; font-size: 16px; line-height: 1.5; }
-.re-leaf2 { grid-column: 31 / 33; grid-row: 53 / 54; }
-.re-item2 { grid-column: 33 / 48; grid-row: 53 / 54; font-size: 16px; line-height: 1.5; }
-.re-leaf3 { grid-column: 31 / 33; grid-row: 55 / 56; }
-.re-item3 { grid-column: 33 / 48; grid-row: 55 / 56; font-size: 16px; line-height: 1.5; }
+.re-lead    { grid-column: 2 / 74;  grid-row: 31 / 34; justify-content: center; text-align: center; font-size: 21px; line-height: 1.5; }
 
 /* ═══════════ S10 신청 폼 (63행) ═══════════ */
 .sec-form { min-height: calc(63 * var(--cell)); }
@@ -291,38 +284,44 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
     grid-template-columns: minmax(12px, 1fr) repeat(24, minmax(0, var(--cell))) minmax(12px, 1fr);
   }
   .sec-hero { min-height: calc(53 * var(--cell)); }
-  .sec-brand { min-height: calc(95 * var(--cell)); }
+  .sec-brand { min-height: calc(116 * var(--cell)); }
   .sec-why { min-height: calc(45 * var(--cell)); }
-  .sec-how { min-height: calc(155 * var(--cell)); }
+  .sec-how { min-height: calc(138 * var(--cell)); }
   .sec-roof1 { min-height: calc(18 * var(--cell)); }
-  .sec-kim { min-height: calc(182 * var(--cell)); }
-  .sec-chun { min-height: calc(255 * var(--cell)); }
+  .sec-kim { min-height: calc(196 * var(--cell)); }
+  .sec-chun { min-height: calc(274 * var(--cell)); }
   .sec-roof2 { min-height: calc(19 * var(--cell)); }
-  .sec-recruit { min-height: calc(64 * var(--cell)); }
+  .sec-recruit { min-height: calc(41 * var(--cell)); }
   .sec-form { min-height: calc(76 * var(--cell)); }
   .sec-palace { min-height: calc(16 * var(--cell)); }
-  .vision-heading, .vision-statement, .kim-meta, .chun-meta, .kim-title, .chun-title, .invite-text { margin-top: 0; }
+  .vision-heading, .vision-statement, .kim-meta, .chun-meta, .kim-title, .chun-title { margin-top: 0; }
   .hero-logo { grid-column: 2 / 6; grid-row: 2 / 5; }
   .hero-title { grid-column: 3 / 25; grid-row: 18 / 31; font-size: 2.623rem; line-height: 1.3; text-align: center; }
   .hero-sub { grid-column: 3 / 25; grid-row: 28 / 34; font-size: 0.918rem; line-height: 1.5; text-align: center; }
   .brand-illust { grid-column: 8 / 20; grid-row: 2 / 7; }
   .brand-wordmark { grid-column: 12 / 16; grid-row: 6 / 9; }
-  .brand-intro { grid-column: 3 / 25; grid-row: 12 / 19; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .brand-headline { grid-column: 3 / 25; grid-row: 11 / 14; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .brand-intro { grid-column: 3 / 25; grid-row: 15 / 21; font-size: 1.049rem; line-height: 1.5; text-align: center; }
   .brand-intro2 { grid-column: 3 / 25; grid-row: 22 / 26; font-size: 1.049rem; line-height: 1.5; text-align: center; }
-  .brand-btn1 { grid-column: 5 / 23; grid-row: 27 / 30; }
-  .brand-btn2 { grid-column: 5 / 23; grid-row: 31 / 34; }
-  .vision-mark { grid-column: 3 / 7; grid-row: 34 / 37; }
-  .vision-caption { grid-column: 3 / 25; grid-row: 37 / 39; font-size: 1.049rem; line-height: 1.5; }
-  .vision-heading { grid-column: 3 / 25; grid-row: 39 / 45; font-size: 2.361rem; line-height: 1.2; }
-  .vision-rule { grid-column: 13 / 16; grid-row: 45 / 48; }
-  .vision-wordmark { grid-column: 10 / 18; grid-row: 48 / 52; }
-  .vision-statement { grid-column: 1 / 27; grid-row: 55 / 65; font-size: 2.23rem; line-height: 1.2; text-align: center; }
-  .vision-desc { grid-column: 4 / 24; grid-row: 68 / 75; font-size: 1.049rem; line-height: 1.5; text-align: center; }
-  .vision-illust { grid-column: 1 / 27; grid-row: 78 / 96; }
-  .why-mark { grid-column: 3 / 7; grid-row: 5 / 8; }
-  .why-heading { grid-column: 3 / 26; grid-row: 10 / 18; font-size: 2.361rem; line-height: 1.4; }
-  .why-questions { grid-column: 2 / 27; grid-row: 20 / 42; font-size: 1.049rem; line-height: 1.5; }
-  .why-trees { grid-column: 4 / 23; grid-row: 35 / 41; }
+  .brand-intro3 { grid-column: 3 / 25; grid-row: 27 / 31; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .brand-divider { grid-column: 3 / 25; grid-row: 32 / 33; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .brand-invite { grid-column: 3 / 25; grid-row: 34 / 37; font-size: 1.18rem; line-height: 1.5; text-align: center; }
+  .brand-invite2 { grid-column: 2 / 26; grid-row: 37 / 42; font-size: 0.984rem; line-height: 1.5; text-align: center; }
+  .brand-btn1 { grid-column: 5 / 23; grid-row: 43 / 46; }
+  .brand-btn2 { grid-column: 5 / 23; grid-row: 47 / 50; }
+  .vision-mark { grid-column: 3 / 7; grid-row: 53 / 56; }
+  .vision-caption { grid-column: 3 / 25; grid-row: 56 / 58; font-size: 1.049rem; line-height: 1.5; }
+  .vision-heading { grid-column: 3 / 25; grid-row: 58 / 64; font-size: 2.361rem; line-height: 1.2; }
+  .vision-rule { grid-column: 13 / 16; grid-row: 64 / 67; }
+  .vision-wordmark { grid-column: 10 / 18; grid-row: 67 / 71; }
+  .vision-statement { grid-column: 1 / 27; grid-row: 74 / 84; font-size: 2.23rem; line-height: 1.2; text-align: center; }
+  .vision-desc { grid-column: 4 / 24; grid-row: 87 / 94; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .vision-illust { grid-column: 1 / 27; grid-row: 97 / 115; }
+  .why-mark { grid-column: 11 / 17; grid-row: 4 / 7; }
+  .why-heading { grid-column: 2 / 26; grid-row: 9 / 15; font-size: 1.18rem; line-height: 1.6; text-align: center; }
+  .why-dots { grid-column: 10 / 18; grid-row: 17 / 19; }
+  .why-questions { grid-column: 2 / 26; grid-row: 21 / 33; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .why-trees { grid-column: 6 / 22; grid-row: 35 / 42; }
   .how-mark { grid-column: 2 / 6; grid-row: 2 / 5; }
   .how-quote { grid-column: 3 / 25; grid-row: 7 / 13; font-size: 2.361rem; line-height: 1.2; text-align: center; }
   .f1-img { grid-column: 3 / 25; grid-row: 17 / 30; }
@@ -341,8 +340,6 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   .f4-label { grid-column: 3 / 25; grid-row: 119 / 121; font-size: 1.049rem; line-height: 1.5; }
   .f4-heading { grid-column: 3 / 25; grid-row: 121 / 125; font-size: 1.574rem; line-height: 1.2; }
   .f4-desc { grid-column: 3 / 25; grid-row: 126 / 132; font-size: 1.049rem; line-height: 1.5; }
-  .invite-text { grid-column: 3 / 25; grid-row: 139 / 145; font-size: 1.574rem; line-height: 1.2; text-align: center; }
-  .invite-btn { grid-column: 5 / 23; grid-row: 147 / 150; }
   .roof1-img { grid-column: 1 / 25; grid-row: 1 / 19; }
   .kim-title { grid-column: 2 / 26; grid-row: 2 / 7; font-size: 2.951rem; line-height: 1.15; }
   .kim-name { grid-column: 2 / 26; grid-row: 13 / 20; font-size: 2.951rem; line-height: 1.15; text-align: right; }
@@ -356,7 +353,11 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   .kim-hands { grid-column: 15 / 27; grid-row: 108 / 125; }
   .kim-workshop { grid-column: 7 / 22; grid-row: 129 / 148; }
   .kim-endquote { grid-column: 2 / 26; grid-row: 150 / 164; font-size: 2.623rem; line-height: 1.1; text-align: center; }
-  .kim-dots { grid-column: 8 / 20; grid-row: 172 / 175; }
+  .kim-prod1 { grid-column: 2 / 13; grid-row: 166 / 179; }
+  .kim-prod1-cap { grid-column: 2 / 13; grid-row: 179 / 185; font-size: 0.787rem; line-height: 1.45; }
+  .kim-prod2 { grid-column: 15 / 26; grid-row: 166 / 179; }
+  .kim-prod2-cap { grid-column: 15 / 26; grid-row: 179 / 185; font-size: 0.787rem; line-height: 1.45; }
+  .kim-dots { grid-column: 8 / 20; grid-row: 188 / 191; }
   .chun-lacquer { grid-column: 1 / 27; grid-row: 20 / 55; }
   .chun-title { grid-column: 2 / 26; grid-row: 3 / 8; font-size: 2.951rem; line-height: 1.15; }
   .chun-name { grid-column: 2 / 26; grid-row: 13 / 20; font-size: 2.951rem; line-height: 1.15; text-align: right; }
@@ -374,22 +375,18 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   .chun-village { grid-column: 7 / 21; grid-row: 178 / 197; }
   .chun-caption { grid-column: 7 / 21; grid-row: 197 / 201; font-size: 0.787rem; line-height: 1.5; }
   .chun-endquote { grid-column: 2 / 26; grid-row: 202 / 216; font-size: 2.623rem; line-height: 1.1; text-align: center; }
-  .chun-walking { grid-column: 1 / 27; grid-row: 221 / 256; }
+  .chun-prod1 { grid-column: 2 / 13; grid-row: 218 / 231; }
+  .chun-prod1-cap { grid-column: 2 / 13; grid-row: 231 / 237; font-size: 0.787rem; line-height: 1.45; }
+  .chun-prod2 { grid-column: 15 / 26; grid-row: 218 / 231; }
+  .chun-prod2-cap { grid-column: 15 / 26; grid-row: 231 / 237; font-size: 0.787rem; line-height: 1.45; }
+  .chun-walking { grid-column: 1 / 27; grid-row: 239 / 274; }
   .roof2-img { grid-column: 2 / 27; grid-row: 1 / 20; }
-  .re-lead { grid-column: 3 / 25; grid-row: 3 / 5; font-size: 1.049rem; line-height: 1.5; text-align: center; }
-  .re-heading { grid-column: 2 / 26; grid-row: 8 / 19; font-size: 2.295rem; line-height: 1.2; text-align: center; }
-  .re-sub { grid-column: 2 / 26; grid-row: 22 / 29; font-size: 1.049rem; line-height: 1.5; text-align: center; }
-  .re-label-l { grid-column: 3 / 11; grid-row: 34 / 36; line-height: 1.5; text-align: left; }
-  .re-label-r { grid-column: 19 / 25; grid-row: 34 / 36; line-height: 1.5; text-align: right; }
-  .re-bar { grid-column: 3 / 25; grid-row: 36 / 37; }
-  .countdown { grid-column: 3 / 25; grid-row: 39 / 46; line-height: 1.1; text-align: center; }
-  .re-benefit-title { grid-column: 10 / 17; grid-row: 51 / 53; font-size: 1.049rem; line-height: 1.5; text-align: center; }
-  .re-leaf1 { grid-column: 9 / 10; grid-row: 54 / 56; }
-  .re-item1 { grid-column: 11 / 24; grid-row: 54 / 56; line-height: 1.5; }
-  .re-leaf2 { grid-column: 9 / 10; grid-row: 57 / 59; }
-  .re-item2 { grid-column: 11 / 23; grid-row: 57 / 59; line-height: 1.5; }
-  .re-leaf3 { grid-column: 9 / 10; grid-row: 60 / 62; }
-  .re-item3 { grid-column: 11 / 21; grid-row: 60 / 62; line-height: 1.5; }
+  .re-heading { grid-column: 2 / 26; grid-row: 4 / 14; font-size: 2.295rem; line-height: 1.2; text-align: center; }
+  .re-sub { grid-column: 2 / 26; grid-row: 16 / 24; font-size: 1.049rem; line-height: 1.5; text-align: center; }
+  .re-label-l { grid-column: 3 / 11; grid-row: 27 / 29; line-height: 1.5; text-align: left; }
+  .re-label-r { grid-column: 19 / 25; grid-row: 27 / 29; line-height: 1.5; text-align: right; }
+  .re-bar { grid-column: 3 / 25; grid-row: 29 / 30; }
+  .re-lead { grid-column: 3 / 25; grid-row: 33 / 37; font-size: 1.049rem; line-height: 1.5; text-align: center; }
   .apply-form { grid-column: 3 / 25; grid-row: 6 / 76; }
   .palace-img { grid-column: 1 / 27; grid-row: 3 / 16; }
   .footer-box { grid-column: 1 / 27; grid-row: 1 / 21; }
@@ -397,13 +394,10 @@ img.fit { width: 100%; height: 100%; object-fit: contain; }
   .footer-desc { grid-column: 3 / 25; grid-row: 11 / 14; line-height: 1.8; text-align: center; }
   .footer-sns { grid-column: 3 / 25; grid-row: 15 / 17; line-height: 1.8; text-align: center; }
   .footer-copy { grid-column: 3 / 25; grid-row: 18 / 19; line-height: 1.8; text-align: center; }
-  .chun-walking-shade { grid-column: 1 / 27; grid-row: 221 / 256; }
+  .chun-walking-shade { grid-column: 1 / 27; grid-row: 239 / 274; }
   .btn { font-size: 0.918rem; border-radius: 20px; }
   .apply-form { padding: 1.836rem 1.18rem; }
   .apply-form__title { font-size: 1.311rem; }
   .apply-form__sub { font-size: 0.852rem; }
-  .countdown { gap: 0.918rem; }
-  .cd-num { font-size: 2.361rem; }
-  .cd-colon { font-size: 1.836rem; }
   .footer-box { border-radius: 24px 24px 0 0; }
 }
